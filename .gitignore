@@ -1,0 +1,67 @@
+# 忽略大模型权重和缓存
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# 忽略大模型文件夹（如有需要可以解开注释）
+Qwen2.5-7B
+btlm-3b-8k-chat/
+Qwen2.5-3B/
+Qwen2.5-3B-Instruct/
+Qwen2.5-7B-Instruct/
+output-lora-qwen/
+output-lora-train5000/
+
+# 忽略中间结果、日志和csv
+*.csv
+*.log
+*.jsonl
+*.json
+
+
+# 忽略Jupyter运行中产生的文件
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# 忽略环境相关
+__MACOSX/
+.env
+.venv
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+
+# 忽略工具包及依赖
+*.egg-info/
+dist/
+build/
+requirements/
+train/
+train.jsonl
+
+# 忽略data/临时数据（如你的data目录为数据原文件，可保留或忽略）
+lost+found/
+
+# 忽略华为云/Notebook平台配置
+.modelarts/
+.git/
+.Trash-1000
+.virtual_documents
+
+# 可选：忽略shell安装包
+*.whl
+*.tar.gz
+
+# 如果有个人密钥等
+*.key
+*.pem
+
+
+.jupyter
+.lsp_symlink
+Ascend-*
+tools
+.DS_Store
